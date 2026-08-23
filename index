@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Royal Horse Milk - Premium Horse Milk Powder</title>
+<title>MaceCoffee | Premium Coffee</title>
 
 <style>
 *{
@@ -18,1610 +18,1330 @@ html{
 }
 
 body{
-    font-family:"Noto Sans Bengali",Arial,sans-serif;
-    background:#fff;
-    color:#222;
-    line-height:1.6;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#faf7f2;
+    color:#21170f;
 }
 
-:root{
-    --green:#08783f;
-    --dark:#064b2b;
-    --gold:#e7a91a;
-    --light:#f4fbf7;
-    --red:#d62828;
-}
-
-.container{
-    width:92%;
-    max-width:1180px;
-    margin:auto;
-}
-
-img{
-    max-width:100%;
-    display:block;
-}
-
-/* ================= HEADER ================= */
-
-.topbar{
-    background:var(--dark);
-    color:#fff;
-    text-align:center;
-    padding:9px 10px;
-    font-size:14px;
-}
+/* NAVBAR */
 
 header{
-    background:#fff;
-    border-bottom:1px solid #eee;
-    position:sticky;
+    width:100%;
+    position:fixed;
     top:0;
-    z-index:999;
-}
+    left:0;
+    z-index:1000;
 
-.nav{
-    min-height:75px;
     display:flex;
-    align-items:center;
     justify-content:space-between;
-    gap:20px;
+    align-items:center;
+
+    padding:18px 7%;
+
+    background:rgba(250,247,242,.94);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid #e8ded2;
 }
 
 .logo{
     font-size:25px;
-    font-weight:900;
-    color:var(--green);
+    font-weight:800;
+    color:#2a1a10;
+    text-decoration:none;
 }
 
 .logo span{
-    color:var(--gold);
+    color:#9b5d30;
 }
 
-.nav-links{
+nav{
     display:flex;
-    gap:25px;
-    list-style:none;
+    gap:30px;
 }
 
-.nav-links a{
+nav a{
+    color:#3e3026;
     text-decoration:none;
-    color:#222;
+    font-size:14px;
     font-weight:600;
 }
 
-.nav-btn{
-    background:var(--green);
-    color:#fff!important;
-    padding:10px 18px;
-    border-radius:6px;
+nav a:hover{
+    color:#9b5d30;
 }
 
-/* ================= HERO ================= */
+.nav-btn{
+    background:#21170f;
+    color:white !important;
+    padding:11px 18px;
+    border-radius:25px;
+}
+
+.menu{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+
+/* HERO */
 
 .hero{
-    background:
-    linear-gradient(90deg,rgba(0,60,30,.94),rgba(0,80,40,.62)),
-    url("https://images.unsplash.com/photo-1550583724-b2692b85b150?auto=format&fit=crop&w=1800&q=80");
-    background-size:cover;
-    background-position:center;
-    min-height:650px;
-    display:flex;
+    min-height:100vh;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
     align-items:center;
-    color:#fff;
+
+    gap:50px;
+
+    padding:120px 8% 70px;
 }
 
-.hero-content{
-    max-width:650px;
-    padding:70px 0;
-}
-
-.badge{
-    display:inline-block;
-    background:var(--gold);
-    color:#222;
-    padding:7px 18px;
-    border-radius:30px;
+.hero-text small{
+    color:#9b5d30;
+    text-transform:uppercase;
+    letter-spacing:3px;
     font-weight:bold;
-    margin-bottom:18px;
 }
 
 .hero h1{
-    font-size:54px;
-    line-height:1.15;
-    margin-bottom:20px;
+    font-family:Georgia,serif;
+    font-size:clamp(55px,7vw,90px);
+    line-height:.98;
+    margin:22px 0;
 }
 
 .hero h1 span{
-    color:#ffd45a;
+    color:#9b5d30;
 }
 
 .hero p{
-    font-size:20px;
-    margin-bottom:25px;
+    max-width:520px;
+    color:#76695e;
+    line-height:1.8;
+    font-size:16px;
 }
 
-.hero-price{
-    margin:20px 0;
-}
-
-.old-price{
-    text-decoration:line-through;
-    opacity:.7;
-    font-size:23px;
-}
-
-.new-price{
-    color:#ffd45a;
-    font-size:42px;
-    font-weight:900;
-    margin-left:12px;
+.buttons{
+    margin-top:30px;
+    display:flex;
+    gap:18px;
+    align-items:center;
 }
 
 .btn{
     display:inline-block;
-    padding:15px 28px;
-    border-radius:7px;
+    padding:15px 25px;
+    border-radius:30px;
     text-decoration:none;
     font-weight:bold;
-    font-size:18px;
-    cursor:pointer;
-    border:none;
+    font-size:13px;
 }
 
-.btn-gold{
-    background:var(--gold);
-    color:#111;
+.btn-dark{
+    background:#21170f;
+    color:white;
 }
 
-.btn-whatsapp{
-    background:#25D366;
-    color:#fff;
+.btn-light{
+    border:1px solid #21170f;
+    color:#21170f;
 }
 
-/* ================= TRUST ================= */
+.btn:hover{
+    transform:translateY(-3px);
+}
 
-.trust{
-    background:#fff;
-    box-shadow:0 3px 20px rgba(0,0,0,.08);
+
+/* COFFEE ART */
+
+.coffee-area{
+    min-height:500px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
     position:relative;
-    margin-top:-45px;
-    border-radius:12px;
-    padding:25px;
+
+    background:linear-gradient(145deg,#ead9c5,#b47b4f);
+
+    border-radius:50% 50% 15px 15px;
+    overflow:hidden;
 }
 
-.trust-grid{
+.sun{
+    position:absolute;
+
+    width:350px;
+    height:350px;
+
+    background:#e4b56f;
+    opacity:.5;
+
+    border-radius:50%;
+}
+
+.cup{
+    position:relative;
+    z-index:3;
+
+    width:230px;
+    height:160px;
+
+    background:#f7eee3;
+
+    border-radius:15px 15px 80px 80px;
+
+    box-shadow:0 25px 30px rgba(50,25,10,.25);
+}
+
+.coffee{
+    position:absolute;
+
+    width:195px;
+    height:48px;
+
+    left:18px;
+    top:-12px;
+
+    background:#432315;
+
+    border:8px solid #eadcca;
+
+    border-radius:50%;
+}
+
+.handle{
+    position:absolute;
+
+    width:75px;
+    height:90px;
+
+    right:-65px;
+    top:28px;
+
+    border:18px solid #f7eee3;
+    border-left:0;
+
+    border-radius:0 50% 50% 0;
+}
+
+.saucer{
+    position:absolute;
+
+    width:330px;
+    height:45px;
+
+    bottom:105px;
+
+    background:#eaded0;
+
+    border-radius:50%;
+
+    z-index:2;
+}
+
+.steam{
+    position:absolute;
+
+    width:30px;
+    height:100px;
+
+    border-left:3px solid rgba(255,255,255,.7);
+
+    border-radius:50%;
+
+    top:110px;
+
+    z-index:5;
+}
+
+.steam1{
+    left:43%;
+}
+
+.steam2{
+    left:50%;
+    top:90px;
+}
+
+.steam3{
+    left:57%;
+}
+
+
+/* STATS */
+
+.stats{
+    background:#21170f;
+    color:white;
+
     display:grid;
     grid-template-columns:repeat(4,1fr);
-    gap:20px;
+
+    padding:30px 8%;
 }
 
-.trust-item{
+.stat{
     text-align:center;
+    border-right:1px solid #ffffff20;
 }
 
-.trust-item .icon{
-    font-size:35px;
+.stat:last-child{
+    border:0;
 }
 
-.trust-item h3{
-    font-size:17px;
-    color:var(--green);
+.stat h3{
+    font-family:Georgia,serif;
+    font-size:30px;
 }
 
-/* ================= SECTION ================= */
+.stat p{
+    color:#bdb0a5;
+    font-size:11px;
+    margin-top:5px;
+}
+
+
+/* COMMON */
 
 section{
-    padding:80px 0;
+    padding:100px 8%;
 }
 
-.section-title{
+.title{
     text-align:center;
-    margin-bottom:45px;
+    max-width:700px;
+    margin:0 auto 55px;
 }
 
-.section-title h2{
-    font-size:38px;
-    color:var(--dark);
-    margin-bottom:10px;
+.title small{
+    color:#9b5d30;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    font-weight:bold;
 }
 
-.section-title p{
-    color:#666;
+.title h2{
+    font-family:Georgia,serif;
+    font-size:55px;
+    margin-top:15px;
 }
 
-/* ================= PRODUCT ================= */
-
-.product{
-    background:var(--light);
+.title h2 span{
+    color:#9b5d30;
 }
 
-.product-grid{
+
+/* STORY */
+
+.story{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:55px;
+
+    gap:80px;
+
     align-items:center;
 }
 
-.product-photo{
-    background:#fff;
-    border-radius:15px;
-    padding:30px;
-    box-shadow:0 5px 25px rgba(0,0,0,.08);
+.story-image{
+    height:470px;
+
+    background:linear-gradient(145deg,#dfc5a8,#956643);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
-.product-photo img{
-    width:100%;
-    max-height:500px;
-    object-fit:contain;
-}
+.bag{
+    width:180px;
+    height:250px;
 
-.product-info h2{
-    font-size:38px;
-    color:var(--green);
-    margin-bottom:15px;
-}
+    background:#2c211a;
+    color:#f7e9d8;
 
-.product-info p{
-    margin-bottom:15px;
-}
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-.benefits{
-    list-style:none;
-    margin:20px 0;
-}
-
-.benefits li{
-    margin:10px 0;
-    font-size:17px;
-}
-
-.benefits li::before{
-    content:"✓";
-    color:var(--green);
-    font-weight:bold;
-    margin-right:10px;
-}
-
-.offer{
-    background:#fff6d8;
-    padding:20px;
-    border-left:5px solid var(--gold);
-    border-radius:8px;
-    margin:25px 0;
-}
-
-.offer-price{
-    font-size:40px;
-    color:var(--red);
-    font-weight:900;
-}
-
-/* ================= COUNTER ================= */
-
-.countdown{
-    background:var(--dark);
-    color:#fff;
     text-align:center;
+
+    font-family:Georgia,serif;
+    font-size:35px;
+
+    transform:rotate(-6deg);
+
+    box-shadow:20px 25px 30px rgba(0,0,0,.2);
 }
 
-.countdown h2{
-    font-size:34px;
+.story-text small{
+    color:#9b5d30;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+.story-text h2{
+    font-family:Georgia,serif;
+    font-size:55px;
+    line-height:1.05;
+
+    margin:18px 0;
+}
+
+.story-text h2 span{
+    color:#9b5d30;
+}
+
+.story-text p{
+    color:#76695e;
+    line-height:1.9;
     margin-bottom:25px;
 }
 
-.timer{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-}
 
-.time-box{
-    background:#fff;
-    color:#222;
-    min-width:85px;
-    padding:12px;
-    border-radius:8px;
-}
+/* PRODUCTS */
 
-.time-box strong{
-    display:block;
-    font-size:30px;
-    color:var(--green);
-}
-
-/* ================= WHY ================= */
-
-.why-grid{
+.products{
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:25px;
 }
 
 .card{
-    background:#fff;
-    padding:30px;
-    text-align:center;
-    border-radius:12px;
-    box-shadow:0 4px 20px rgba(0,0,0,.08);
+    background:white;
+    border:1px solid #e5ddd4;
     transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(50,30,15,.1);
 }
 
-.card-icon{
-    font-size:45px;
-    margin-bottom:12px;
-}
+.card-img{
+    height:260px;
 
-.card h3{
-    color:var(--green);
-    margin-bottom:10px;
-}
-
-/* ================= ORDER ================= */
-
-.order-section{
-    background:#f5f9f6;
-}
-
-.order-wrapper{
-    max-width:850px;
-    margin:auto;
-    background:#fff;
-    padding:35px;
-    border-radius:15px;
-    box-shadow:0 5px 30px rgba(0,0,0,.1);
-}
-
-.form-row{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:18px;
-}
-
-.form-group{
-    margin-bottom:18px;
-}
-
-.form-group label{
-    display:block;
-    font-weight:bold;
-    margin-bottom:7px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-    width:100%;
-    padding:14px;
-    border:1px solid #ddd;
-    border-radius:7px;
-    outline:none;
-    font-size:16px;
-}
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-    border-color:var(--green);
-}
-
-textarea{
-    min-height:100px;
-    resize:vertical;
-}
-
-.quantity-box{
     display:flex;
+    justify-content:center;
     align-items:center;
-    gap:15px;
 }
 
-.quantity-box button{
-    width:42px;
-    height:42px;
-    border:0;
-    background:var(--green);
-    color:#fff;
-    font-size:24px;
-    border-radius:5px;
-    cursor:pointer;
+.card:nth-child(1) .card-img{
+    background:#dfc5a8;
 }
 
-.quantity-box span{
-    font-size:22px;
-    font-weight:bold;
-    min-width:30px;
-    text-align:center;
+.card:nth-child(2) .card-img{
+    background:#d5c5b7;
 }
 
-.summary{
-    background:#f2f8f4;
-    padding:20px;
-    border-radius:8px;
-    margin:20px 0;
+.card:nth-child(3) .card-img{
+    background:#bda795;
 }
 
-.summary-row{
-    display:flex;
-    justify-content:space-between;
-    padding:7px 0;
+.mini-cup{
+    width:120px;
+    height:80px;
+
+    background:#f4eadf;
+
+    border-radius:10px 10px 45px 45px;
+
+    box-shadow:0 15px 20px rgba(0,0,0,.2);
+
+    position:relative;
 }
 
-.total-row{
-    border-top:1px solid #ddd;
-    margin-top:10px;
-    padding-top:12px;
-    font-size:22px;
-    font-weight:bold;
-    color:var(--green);
+.mini-cup:before{
+    content:"";
+
+    position:absolute;
+
+    width:100px;
+    height:25px;
+
+    left:10px;
+    top:-8px;
+
+    background:#402314;
+
+    border-radius:50%;
+
+    border:5px solid #e9dbca;
 }
 
-.order-submit{
-    width:100%;
-    padding:17px;
-    background:#25D366;
-    color:#fff;
-    border:0;
-    border-radius:7px;
-    font-size:20px;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-/* ================= REVIEWS ================= */
-
-.reviews{
-    background:#fff;
-}
-
-.review-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.review{
-    background:#f7faf8;
-    padding:28px;
-    border-radius:12px;
-}
-
-.stars{
-    color:#f5a623;
-    font-size:22px;
-    margin-bottom:10px;
-}
-
-.customer{
-    margin-top:15px;
-    font-weight:bold;
-    color:var(--green);
-}
-
-/* ================= FAQ ================= */
-
-.faq{
-    background:var(--light);
-}
-
-.faq-container{
-    max-width:850px;
-    margin:auto;
-}
-
-.faq-item{
-    background:#fff;
-    margin-bottom:12px;
-    border-radius:8px;
-    overflow:hidden;
-    box-shadow:0 2px 8px rgba(0,0,0,.05);
-}
-
-.faq-question{
-    padding:18px 20px;
-    cursor:pointer;
-    font-weight:bold;
-    display:flex;
-    justify-content:space-between;
-}
-
-.faq-answer{
-    display:none;
-    padding:0 20px 20px;
-    color:#555;
-}
-
-.faq-item.active .faq-answer{
-    display:block;
-}
-
-/* ================= CONTACT ================= */
-
-.contact{
-    background:var(--dark);
-    color:#fff;
-    text-align:center;
-}
-
-.contact h2{
-    font-size:35px;
-    margin-bottom:15px;
-}
-
-.contact p{
-    margin-bottom:20px;
-}
-
-/* ================= FOOTER ================= */
-
-footer{
-    background:#032b19;
-    color:#ddd;
-    text-align:center;
+.card-body{
     padding:25px;
 }
 
-/* ================= FLOATING WHATSAPP ================= */
-
-.whatsapp-float{
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    width:60px;
-    height:60px;
-    border-radius:50%;
-    background:#25D366;
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:31px;
-    text-decoration:none;
-    z-index:1000;
-    box-shadow:0 5px 20px rgba(0,0,0,.25);
+.card-body small{
+    color:#9b5d30;
+    font-weight:bold;
+    font-size:10px;
 }
 
-/* ================= MOBILE ================= */
+.card-body h3{
+    font-family:Georgia,serif;
+    font-size:28px;
+    margin:7px 0;
+}
 
-@media(max-width:768px){
+.card-body p{
+    color:#76695e;
+    font-size:13px;
+    line-height:1.6;
+}
 
-    .nav-links{
+.price{
+    margin-top:20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.price strong{
+    font-family:Georgia,serif;
+    font-size:20px;
+}
+
+.cart{
+    border:0;
+    border-bottom:1px solid #21170f;
+
+    background:none;
+
+    padding-bottom:3px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+}
+
+
+/* WHY */
+
+.why{
+    background:#f0e7dc;
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:50px;
+
+    max-width:1100px;
+    margin:auto;
+}
+
+.feature{
+    text-align:center;
+}
+
+.feature-number{
+    color:#9b5d30;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.feature h3{
+    font-family:Georgia,serif;
+    font-size:27px;
+    margin:12px 0;
+}
+
+.feature p{
+    color:#76695e;
+    line-height:1.7;
+    font-size:13px;
+}
+
+
+/* CTA */
+
+.cta{
+    margin:90px 8%;
+
+    padding:75px;
+
+    background:#21170f;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    border-radius:4px;
+}
+
+.cta h2{
+    font-family:Georgia,serif;
+    font-size:55px;
+    line-height:1;
+}
+
+.cta h2 span{
+    color:#c18455;
+}
+
+.cta p{
+    color:#bdb0a5;
+    margin-bottom:20px;
+}
+
+
+/* FOOTER */
+
+footer{
+    padding:45px 8%;
+
+    border-top:1px solid #e1d9d0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+footer p{
+    color:#76695e;
+    font-size:12px;
+}
+
+.social{
+    display:flex;
+    gap:20px;
+}
+
+.social a{
+    color:#21170f;
+    font-weight:bold;
+    font-size:12px;
+}
+
+
+/* TOAST */
+
+.toast{
+    position:fixed;
+
+    right:25px;
+    bottom:25px;
+
+    background:#21170f;
+    color:white;
+
+    padding:14px 20px;
+
+    border-radius:8px;
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    transition:.3s;
+
+    z-index:2000;
+
+    font-size:13px;
+}
+
+.toast.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    header{
+        padding:16px 5%;
+    }
+
+    nav{
         display:none;
+
+        position:absolute;
+
+        top:70px;
+        left:5%;
+        right:5%;
+
+        background:white;
+
+        padding:25px;
+
+        flex-direction:column;
+
+        gap:20px;
+
+        box-shadow:0 15px 35px rgba(0,0,0,.1);
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    .nav-btn{
+        text-align:center;
+    }
+
+    .menu{
+        display:block;
     }
 
     .hero{
-        min-height:570px;
+        grid-template-columns:1fr;
+
+        padding:120px 5% 60px;
     }
 
     .hero h1{
-        font-size:38px;
+        font-size:58px;
     }
 
-    .hero p{
-        font-size:17px;
+    .coffee-area{
+        min-height:430px;
     }
 
-    .trust-grid{
-        grid-template-columns:1fr 1fr;
+    .stats{
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
     }
 
-    .product-grid{
+    .stat{
+        border:0;
+    }
+
+    .story{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .story-text h2{
+        font-size:45px;
+    }
+
+    .products{
         grid-template-columns:1fr;
     }
 
-    .why-grid,
-    .review-grid{
+    .features{
         grid-template-columns:1fr;
     }
 
-    .form-row{
-        grid-template-columns:1fr;
+    .title h2{
+        font-size:43px;
     }
 
-    .timer{
-        gap:7px;
+    .cta{
+        margin:50px 5%;
+        padding:45px 30px;
+
+        display:block;
     }
 
-    .time-box{
-        min-width:65px;
+    .cta h2{
+        font-size:45px;
     }
 
-    .time-box strong{
-        font-size:24px;
+    .cta-right{
+        margin-top:30px;
     }
 
-    .section-title h2{
-        font-size:30px;
+    footer{
+        flex-direction:column;
+        gap:20px;
+        text-align:center;
     }
 
-    .order-wrapper{
-        padding:20px;
-    }
 }
+
 </style>
 </head>
 
+
 <body>
- 
-<!-- TOP BAR -->
-<div class="topbar">
-    🚚 সারা বাংলাদেশে হোম ডেলিভারি | 📦 ক্যাশ অন ডেলিভারি
-</div>
 
 
-<!-- HEADER -->
+<!-- NAVIGATION -->
+
 <header>
-    <div class="container nav">
 
-        <div class="logo">
-            🐎 Royal <span>Horse Milk</span>
-        </div>
+    <a href="#home" class="logo">
+        Mace<span>Coffee</span>
+    </a>
 
-        <ul class="nav-links">
-            <li><a href="#home">হোম</a></li>
-            <li><a href="#product">পণ্য</a></li>
-            <li><a href="#reviews">রিভিউ</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li>
-                <a class="nav-btn" href="#order">
-                    অর্ডার করুন
-                </a>
-            </li>
-        </ul>
-
+    <div class="menu" onclick="toggleMenu()">
+        ☰
     </div>
+
+    <nav id="nav">
+
+        <a href="#home">Home</a>
+
+        <a href="#story">Our Story</a>
+
+        <a href="#menu">Menu</a>
+
+        <a href="#why">Why Us</a>
+
+        <a href="#contact" class="nav-btn">
+            Contact
+        </a>
+
+    </nav>
+
 </header>
 
 
+
 <!-- HERO -->
+
 <section class="hero" id="home">
 
-<div class="container">
+    <div class="hero-text">
 
-<div class="hero-content">
+        <small>
+            Crafted for coffee lovers
+        </small>
 
-<span class="badge">
-🔥 বিশেষ অফার চলছে
-</span>
+        <h1>
+            Good coffee.
+            <br>
+            <span>Better moments.</span>
+        </h1>
 
-<h1>
-Premium <span>Royal Horse Milk</span>
-</h1>
+        <p>
+            Discover rich, aromatic coffee made from carefully
+            selected beans and roasted to bring out their natural
+            character.
+        </p>
 
-<p>
-আপনার দৈনন্দিন পুষ্টির জন্য প্রিমিয়াম হর্স মিল্ক পাউডার।
-গুণগত মান ও সঠিক প্যাকেজিংয়ের সাথে আপনার দরজায় পৌঁছে দিচ্ছি।
-</p>
+        <div class="buttons">
 
-<div class="hero-price">
-<span class="old-price">৳১,৫০০</span>
-<span class="new-price">৳৯৯০</span>
-</div>
+            <a href="#menu" class="btn btn-dark">
+                Discover Coffee →
+            </a>
 
-<a href="#order" class="btn btn-gold">
-🛒 এখনই অর্ডার করুন
-</a>
+            <a href="#story" class="btn btn-light">
+                Our Story
+            </a>
 
-</div>
+        </div>
 
-</div>
-
-</section>
-
-
-<!-- TRUST -->
-<div class="container">
-
-<div class="trust">
-
-<div class="trust-grid">
-
-<div class="trust-item">
-<div class="icon">🚚</div>
-<h3>দ্রুত ডেলিভারি</h3>
-<p>সারা বাংলাদেশে</p>
-</div>
-
-<div class="trust-item">
-<div class="icon">💵</div>
-<h3>ক্যাশ অন ডেলিভারি</h3>
-<p>হাতে পেয়ে মূল্য দিন</p>
-</div>
-
-<div class="trust-item">
-<div class="icon">⭐</div>
-<h3>প্রিমিয়াম কোয়ালিটি</h3>
-<p>মানসম্মত পণ্য</p>
-</div>
-
-<div class="trust-item">
-<div class="icon">🔒</div>
-<h3>নিরাপদ অর্ডার</h3>
-<p>WhatsApp অর্ডার</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 
-<!-- PRODUCT -->
-<section class="product" id="product">
+    <!-- COFFEE -->
 
-<div class="container">
+    <div class="coffee-area">
 
-<div class="section-title">
+        <div class="sun"></div>
 
-<h2>Royal Horse Milk</h2>
+        <div class="steam steam1"></div>
+        <div class="steam steam2"></div>
+        <div class="steam steam3"></div>
 
-<p>
-Premium Horse Milk Powder
-</p>
+        <div class="cup">
 
-</div>
+            <div class="coffee"></div>
 
+            <div class="handle"></div>
 
-<div class="product-grid">
+        </div>
 
-<div class="product-photo">
+        <div class="saucer"></div>
 
-<!-- নিজের product image এখানে বসাতে পারবেন -->
-<img
-src="https://royalhorsemilk.com/wp-content/uploads/2024/05/royal-horse-milk-powder.png"
-alt="Royal Horse Milk">
-
-</div>
-
-
-<div class="product-info">
-
-<h2>কেন Royal Horse Milk?</h2>
-
-<p>
-Royal Horse Milk একটি premium milk powder product
-যা দৈনন্দিন খাদ্যাভ্যাসের অংশ হিসেবে ব্যবহার করা যায়।
-</p>
-
-<ul class="benefits">
-
-<li>প্রিমিয়াম মানের পণ্য</li>
-<li>সহজে ব্যবহারযোগ্য</li>
-<li>সুন্দর ও নিরাপদ প্যাকেজিং</li>
-<li>সারা বাংলাদেশে ডেলিভারি</li>
-<li>ক্যাশ অন ডেলিভারি সুবিধা</li>
-
-</ul>
-
-
-<div class="offer">
-
-<p>আজকের বিশেষ অফার</p>
-
-<div class="offer-price">
-৳৯৯০
-</div>
-
-<p>
-Regular Price: <del>৳১,৫০০</del>
-</p>
-
-</div>
-
-
-<a href="#order" class="btn btn-gold">
-অর্ডার করতে এখানে ক্লিক করুন
-</a>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- COUNTDOWN -->
-<section class="countdown">
 
-<div class="container">
+<!-- STATS -->
 
-<h2>🔥 অফার শেষ হতে বাকি</h2>
+<div class="stats">
 
-<div class="timer">
+    <div class="stat">
+        <h3>12+</h3>
+        <p>Signature Blends</p>
+    </div>
 
-<div class="time-box">
-<strong id="days">00</strong>
-দিন
-</div>
+    <div class="stat">
+        <h3>100%</h3>
+        <p>Freshly Roasted</p>
+    </div>
 
-<div class="time-box">
-<strong id="hours">00</strong>
-ঘণ্টা
-</div>
+    <div class="stat">
+        <h3>24H</h3>
+        <p>Fast Dispatch</p>
+    </div>
 
-<div class="time-box">
-<strong id="minutes">00</strong>
-মিনিট
-</div>
-
-<div class="time-box">
-<strong id="seconds">00</strong>
-সেকেন্ড
-</div>
+    <div class="stat">
+        <h3>4.9★</h3>
+        <p>Customer Rating</p>
+    </div>
 
 </div>
 
-</div>
+
+
+<!-- STORY -->
+
+<section id="story">
+
+    <div class="story">
+
+        <div class="story-image">
+
+            <div class="bag">
+
+                MACE
+                <br>
+                COFFEE
+
+            </div>
+
+        </div>
+
+
+        <div class="story-text">
+
+            <small>
+                THE MACECOFFEE STORY
+            </small>
+
+            <h2>
+                From better beans
+                to
+                <span>better mornings.</span>
+            </h2>
+
+            <p>
+                We believe coffee should feel like a small daily
+                ritual. That's why every MaceCoffee blend starts
+                with carefully selected beans and ends with a roast
+                designed for a balanced and memorable cup.
+            </p>
+
+            <a href="#contact" class="btn btn-dark">
+                Learn More →
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
+
+
+
+<!-- MENU -->
+
+<section id="menu">
+
+    <div class="title">
+
+        <small>
+            Choose your ritual
+        </small>
+
+        <h2>
+            Find your
+            <span>perfect cup.</span>
+        </h2>
+
+        <p>
+            Premium coffee blends made for your everyday moments.
+        </p>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <!-- CARD 1 -->
+
+        <div class="card">
+
+            <div class="card-img">
+
+                <div class="mini-cup"></div>
+
+            </div>
+
+            <div class="card-body">
+
+                <small>
+                    01 / SIGNATURE
+                </small>
+
+                <h3>
+                    Classic Roast
+                </h3>
+
+                <p>
+                    Chocolate notes, smooth body and a warm finish.
+                </p>
+
+                <div class="price">
+
+                    <strong>
+                        ৳650
+                    </strong>
+
+                    <button
+                        class="cart"
+                        onclick="addCart('Classic Roast')">
+
+                        Add to cart +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 2 -->
+
+        <div class="card">
+
+            <div class="card-img">
+
+                <div class="mini-cup"></div>
+
+            </div>
+
+            <div class="card-body">
+
+                <small>
+                    02 / PREMIUM
+                </small>
+
+                <h3>
+                    Velvet Blend
+                </h3>
+
+                <p>
+                    Silky caramel sweetness with a gentle nutty aroma.
+                </p>
+
+                <div class="price">
+
+                    <strong>
+                        ৳780
+                    </strong>
+
+                    <button
+                        class="cart"
+                        onclick="addCart('Velvet Blend')">
+
+                        Add to cart +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CARD 3 -->
+
+        <div class="card">
+
+            <div class="card-img">
+
+                <div class="mini-cup"></div>
+
+            </div>
+
+            <div class="card-body">
+
+                <small>
+                    03 / DARK
+                </small>
+
+                <h3>
+                    Midnight Roast
+                </h3>
+
+                <p>
+                    Deep cocoa, roasted spice and a bold finish.
+                </p>
+
+                <div class="price">
+
+                    <strong>
+                        ৳720
+                    </strong>
+
+                    <button
+                        class="cart"
+                        onclick="addCart('Midnight Roast')">
+
+                        Add to cart +
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
 
 
 <!-- WHY US -->
-<section>
 
-<div class="container">
+<section class="why" id="why">
 
-<div class="section-title">
+    <div class="title">
 
-<h2>আমাদের কাছ থেকে কেন কিনবেন?</h2>
+        <small>
+            Why MaceCoffee
+        </small>
 
-<p>কাস্টমারের সুবিধাকে আমরা সর্বোচ্চ গুরুত্ব দিই</p>
+        <h2>
+            Small details.
+            <span>Big difference.</span>
+        </h2>
 
-</div>
-
-
-<div class="why-grid">
-
-<div class="card">
-
-<div class="card-icon">🏆</div>
-
-<h3>প্রিমিয়াম কোয়ালিটি</h3>
-
-<p>
-গুণগত মানকে গুরুত্ব দিয়ে পণ্য সরবরাহ করা হয়।
-</p>
-
-</div>
+    </div>
 
 
-<div class="card">
-
-<div class="card-icon">🚚</div>
-
-<h3>দ্রুত ডেলিভারি</h3>
-
-<p>
-সারা বাংলাদেশে নির্ভরযোগ্য কুরিয়ার সার্ভিসের মাধ্যমে ডেলিভারি।
-</p>
-
-</div>
+    <div class="features">
 
 
-<div class="card">
+        <div class="feature">
 
-<div class="card-icon">💳</div>
+            <div class="feature-number">
+                01
+            </div>
 
-<h3>ক্যাশ অন ডেলিভারি</h3>
+            <h3>
+                Freshly Roasted
+            </h3>
 
-<p>
-পণ্য হাতে পাওয়ার পর মূল্য পরিশোধ করার সুবিধা।
-</p>
+            <p>
+                We roast in small batches to keep every cup
+                vibrant and aromatic.
+            </p>
 
-</div>
-
-
-<div class="card">
-
-<div class="card-icon">📱</div>
-
-<h3>সহজ অর্ডার</h3>
-
-<p>
-ফর্ম পূরণ করে সরাসরি WhatsApp-এর মাধ্যমে অর্ডার করতে পারবেন।
-</p>
-
-</div>
+        </div>
 
 
-<div class="card">
+        <div class="feature">
 
-<div class="card-icon">📦</div>
+            <div class="feature-number">
+                02
+            </div>
 
-<h3>সুরক্ষিত প্যাকেজিং</h3>
+            <h3>
+                Carefully Sourced
+            </h3>
 
-<p>
-পণ্য নিরাপদে পৌঁছে দেওয়ার জন্য যথাযথ প্যাকেজিং।
-</p>
+            <p>
+                Our beans are selected for quality,
+                flavour and consistency.
+            </p>
 
-</div>
+        </div>
 
 
-<div class="card">
+        <div class="feature">
 
-<div class="card-icon">☎️</div>
+            <div class="feature-number">
+                03
+            </div>
 
-<h3>Customer Support</h3>
+            <h3>
+                Made For You
+            </h3>
 
-<p>
-অর্ডার সংক্রান্ত প্রয়োজনে আমাদের সাথে যোগাযোগ করতে পারবেন।
-</p>
+            <p>
+                Balanced coffee profiles designed for your
+                favourite brewing method.
+            </p>
 
-</div>
+        </div>
 
-</div>
-
-</div>
+    </div>
 
 </section>
 
 
-<!-- ORDER -->
-<section class="order-section" id="order">
 
-<div class="container">
+<!-- CONTACT CTA -->
 
-<div class="section-title">
+<section id="contact">
 
-<h2>অর্ডার করুন</h2>
+    <div class="cta">
 
-<p>
-নিচের ফর্মটি পূরণ করুন। Submit করলে WhatsApp খুলবে।
-</p>
+        <div>
 
-</div>
+            <h2>
+                Make today
+                <br>
+                <span>taste better.</span>
+            </h2>
 
+        </div>
 
-<div class="order-wrapper">
 
-<form id="orderForm">
+        <div class="cta-right">
 
+            <p>
+                Ready to discover your new favourite roast?
+            </p>
 
-<div class="form-row">
+            <!-- নিজের WhatsApp number এখানে বসাবে -->
 
-<div class="form-group">
+            <a
+                href="https://wa.me/8801XXXXXXXXX"
+                target="_blank"
+                class="btn btn-light">
 
-<label>আপনার নাম *</label>
+                Order on WhatsApp ↗
 
-<input
-type="text"
-id="name"
-placeholder="আপনার পূর্ণ নাম"
-required>
+            </a>
 
-</div>
+        </div>
 
-
-<div class="form-group">
-
-<label>মোবাইল নম্বর *</label>
-
-<input
-type="tel"
-id="phone"
-placeholder="01894393099"
-required>
-
-</div>
-
-</div>
-
-
-<div class="form-row">
-
-<div class="form-group">
-
-<label>জেলা *</label>
-
-<select id="district" required>
-
-<option value="">জেলা নির্বাচন করুন</option>
-
-<option>ঢাকা</option>
-<option>নারায়ণগঞ্জ</option>
-<option>গাজীপুর</option>
-<option>চট্টগ্রাম</option>
-<option>কুমিল্লা</option>
-<option>সিলেট</option>
-<option>রাজশাহী</option>
-<option>খুলনা</option>
-<option>বরিশাল</option>
-<option>রংপুর</option>
-<option>ময়মনসিংহ</option>
-<option>যশোর</option>
-<option>কুষ্টিয়া</option>
-<option>নোয়াখালী</option>
-<option>ফেনী</option>
-<option>নরসিংদী</option>
-<option>টাঙ্গাইল</option>
-<option>বগুড়া</option>
-
-</select>
-
-</div>
-
-
-<div class="form-group">
-
-<label>থানা *</label>
-
-<input
-type="text"
-id="thana"
-placeholder="আপনার থানার নাম"
-required>
-
-</div>
-
-</div>
-
-
-<div class="form-group">
-
-<label>সম্পূর্ণ ঠিকানা *</label>
-
-<textarea
-id="address"
-placeholder="বাড়ি/রোড/গ্রাম/বাজারের নাম লিখুন"
-required></textarea>
-
-</div>
-
-
-<div class="form-group">
-
-<label>পণ্যের পরিমাণ</label>
-
-<div class="quantity-box">
-
-<button type="button" onclick="changeQty(-1)">
-−
-</button>
-
-<span id="qty">1</span>
-
-<button type="button" onclick="changeQty(1)">
-+
-</button>
-
-</div>
-
-</div>
-
-
-<div class="summary">
-
-<div class="summary-row">
-
-<span>পণ্যের মূল্য</span>
-
-<span>
-৳<span id="productPrice">990</span>
-</span>
-
-</div>
-
-
-<div class="summary-row">
-
-<span>ডেলিভারি চার্জ</span>
-
-<span>
-৳<span id="delivery">120</span>
-</span>
-
-</div>
-
-
-<div class="summary-row total-row">
-
-<span>সর্বমোট</span>
-
-<span>
-৳<span id="grandTotal">1110</span>
-</span>
-
-</div>
-
-</div>
-
-
-<button
-type="submit"
-class="order-submit">
-
-📲 WhatsApp-এ অর্ডার কনফার্ম করুন
-
-</button>
-
-
-</form>
-
-</div>
-
-</div>
+    </div>
 
 </section>
 
-
-<!-- REVIEWS -->
-<section class="reviews" id="reviews">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>কাস্টমারদের মতামত</h2>
-
-<p>আমাদের কাস্টমারদের কিছু অভিজ্ঞতা</p>
-
-</div>
-
-
-<div class="review-grid">
-
-<div class="review">
-
-<div class="stars">★★★★★</div>
-
-<p>
-“পণ্য সুন্দরভাবে পেয়েছি। প্যাকেজিংও ভালো ছিল।
-ডেলিভারি দ্রুত পেয়েছি।”
-</p>
-
-<div class="customer">
-— রাকিব, ঢাকা
-</div>
-
-</div>
-
-
-<div class="review">
-
-<div class="stars">★★★★★</div>
-
-<p>
-“অর্ডার করার পর WhatsApp-এ দ্রুত confirmation পেয়েছি।
-সার্ভিস ভালো লেগেছে।”
-</p>
-
-<div class="customer">
-— সুমাইয়া, নারায়ণগঞ্জ
-</div>
-
-</div>
-
-
-<div class="review">
-
-<div class="stars">★★★★★</div>
-
-<p>
-“ক্যাশ অন ডেলিভারিতে পণ্য হাতে পেয়েছি।
-প্যাকেজিং ভালো ছিল।”
-</p>
-
-<div class="customer">
-— হাসান, চট্টগ্রাম
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- FAQ -->
-<section class="faq" id="faq">
-
-<div class="container">
-
-<div class="section-title">
-
-<h2>সাধারণ প্রশ্ন</h2>
-
-<p>আপনার প্রয়োজনীয় তথ্য এখানে দেখুন</p>
-
-</div>
-
-
-<div class="faq-container">
-
-
-<div class="faq-item">
-
-<div class="faq-question">
-পণ্য কীভাবে অর্ডার করব?
-<span>+</span>
-</div>
-
-<div class="faq-answer">
-অর্ডার ফর্ম পূরণ করে “WhatsApp-এ অর্ডার কনফার্ম করুন”
-বাটনে ক্লিক করুন। এরপর WhatsApp-এ অর্ডারের তথ্য পাঠিয়ে দিন।
-</div>
-
-</div>
-
-
-<div class="faq-item">
-
-<div class="faq-question">
-ক্যাশ অন ডেলিভারি আছে?
-<span>+</span>
-</div>
-
-<div class="faq-answer">
-হ্যাঁ, ক্যাশ অন ডেলিভারি রাখা হয়েছে। আপনার এলাকায়
-কুরিয়ার সুবিধা অনুযায়ী ডেলিভারি দেওয়া হবে।
-</div>
-
-</div>
-
-
-<div class="faq-item">
-
-<div class="faq-question">
-কত দিনে ডেলিভারি পাব?
-<span>+</span>
-</div>
-
-<div class="faq-answer">
-সাধারণত ২–৫ কর্মদিবসের মধ্যে ডেলিভারি হতে পারে।
-এলাকা ও কুরিয়ার সার্ভিস অনুযায়ী সময় কিছুটা পরিবর্তিত হতে পারে।
-</div>
-
-</div>
-
-
-<div class="faq-item">
-
-<div class="faq-question">
-ডেলিভারি চার্জ কত?
-<span>+</span>
-</div>
-
-<div class="faq-answer">
-বর্তমান demo সেটআপে ডেলিভারি চার্জ ৳১২০ রাখা হয়েছে।
-আপনি চাইলে কোডে এই মূল্য পরিবর্তন করতে পারবেন।
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- CONTACT -->
-<section class="contact">
-
-<div class="container">
-
-<h2>অর্ডার করতে প্রস্তুত?</h2>
-
-<p>
-আজকের অফার মিস করবেন না।
-</p>
-
-<a href="#order" class="btn btn-gold">
-🛒 এখনই অর্ডার করুন
-</a>
-
-</div>
-
-</section>
 
 
 <!-- FOOTER -->
+
 <footer>
 
-<p>
-© 2026 Royal Horse Milk. All Rights Reserved.
-</p>
+    <div>
+
+        <a href="#home" class="logo">
+            Mace<span>Coffee</span>
+        </a>
+
+        <p>
+            Better beans. Better moments.
+        </p>
+
+    </div>
+
+
+    <div class="social">
+
+        <a href="#">
+            Facebook
+        </a>
+
+        <a href="#">
+            Instagram
+        </a>
+
+        <a href="#">
+            WhatsApp
+        </a>
+
+    </div>
+
+
+    <p>
+        © <span id="year"></span>
+        MaceCoffee
+    </p>
 
 </footer>
 
 
-<!-- FLOATING WHATSAPP -->
 
-<a
-href="https://wa.me/8801894393099"
-class="whatsapp-float"
-target="_blank"
-title="WhatsApp">
+<!-- TOAST -->
 
-💬
+<div class="toast" id="toast"></div>
 
-</a>
 
 
 <script>
 
-/* =========================
-   PRODUCT SETTINGS
-========================= */
+/* ==========================
+   MOBILE MENU
+========================== */
 
-const productPrice = 990;
-const deliveryCharge = 120;
+function toggleMenu(){
 
-let quantity = 1;
+    const nav = document.getElementById("nav");
 
-
-/* =========================
-   QUANTITY
-========================= */
-
-function changeQty(value){
-
-    quantity += value;
-
-    if(quantity < 1){
-        quantity = 1;
-    }
-
-    document.getElementById("qty").innerText = quantity;
-
-    updateTotal();
+    nav.classList.toggle("active");
 
 }
 
 
-function updateTotal(){
+/* ==========================
+   ADD TO CART MESSAGE
+========================== */
 
-    const productTotal =
-        productPrice * quantity;
+function addCart(product){
 
-    const grandTotal =
-        productTotal + deliveryCharge;
+    const toast = document.getElementById("toast");
 
-    document.getElementById("productPrice").innerText =
-        productTotal;
+    toast.innerHTML =
+        "☕ " + product + " added to your cart!";
 
-    document.getElementById("grandTotal").innerText =
-        grandTotal;
+    toast.classList.add("show");
+
+    setTimeout(function(){
+
+        toast.classList.remove("show");
+
+    },2500);
 
 }
 
 
-/* =========================
-   WHATSAPP ORDER
-========================= */
+/* ==========================
+   CURRENT YEAR
+========================== */
 
-document
-.getElementById("orderForm")
-.addEventListener("submit",function(e){
-
-    e.preventDefault();
+document.getElementById("year").innerHTML =
+    new Date().getFullYear();
 
 
-    const name =
-    document.getElementById("name").value.trim();
+/* ==========================
+   CLOSE MENU AFTER CLICK
+========================== */
 
-    const phone =
-    document.getElementById("phone").value.trim();
+document.querySelectorAll("nav a").forEach(function(link){
 
-    const district =
-    document.getElementById("district").value;
+    link.addEventListener("click",function(){
 
-    const thana =
-    document.getElementById("thana").value.trim();
-
-    const address =
-    document.getElementById("address").value.trim();
-
-
-    const productTotal =
-    productPrice * quantity;
-
-    const grandTotal =
-    productTotal + deliveryCharge;
-
-
-    /*
-    ===================================
-    আপনার WhatsApp নম্বর এখানে দিন।
-
-    উদাহরণ:
-    01894393099
-
-    লিখবেন:
-    8801894393099
-    ===================================
-    */
-
-    const whatsappNumber =
-    "8801894393099";
-
-
-    const message =
-`🐎 ROYAL HORSE MILK
-🛒 নতুন অর্ডার
-
-━━━━━━━━━━━━━━
-
-👤 কাস্টমারের নাম:
-${name}
-
-📱 মোবাইল:
-${phone}
-
-📍 জেলা:
-${district}
-
-🏢 থানা:
-${thana}
-
-🏠 সম্পূর্ণ ঠিকানা:
-${address}
-
-━━━━━━━━━━━━━━
-
-📦 পণ্য:
-Royal Horse Milk
-
-🔢 পরিমাণ:
-${quantity}
-
-💰 পণ্যের মূল্য:
-৳${productTotal}
-
-🚚 ডেলিভারি চার্জ:
-৳${deliveryCharge}
-
-💵 সর্বমোট:
-৳${grandTotal}
-
-━━━━━━━━━━━━━━
-Royal Horse Milk`;
-
-
-
-    const url =
-    "https://wa.me/" +
-    whatsappNumber +
-    "?text=" +
-    encodeURIComponent(message);
-
-
-    window.open(url,"_blank");
-
-});
-
-
-/* =========================
-   FAQ
-========================= */
-
-document
-.querySelectorAll(".faq-question")
-.forEach(function(question){
-
-    question.addEventListener("click",function(){
-
-        const item =
-        this.parentElement;
-
-        item.classList.toggle("active");
-
-        const icon =
-        this.querySelector("span");
-
-        icon.innerText =
-        item.classList.contains("active")
-        ? "−"
-        : "+";
+        document
+            .getElementById("nav")
+            .classList.remove("active");
 
     });
 
 });
 
-
-/* =========================
-   COUNTDOWN
-========================= */
-
-/*
-প্রতি ২৪ ঘণ্টার জন্য countdown।
-*/
-
-let endTime =
-new Date().getTime() +
-(24 * 60 * 60 * 1000);
-
-
-function countdown(){
-
-    const now =
-    new Date().getTime();
-
-    let distance =
-    endTime - now;
-
-
-    if(distance <= 0){
-
-        endTime =
-        new Date().getTime() +
-        (24 * 60 * 60 * 1000);
-
-        distance =
-        endTime - now;
-
-    }
-
-
-    const days =
-    Math.floor(
-        distance /
-        (1000 * 60 * 60 * 24)
-    );
-
-
-    const hours =
-    Math.floor(
-        (distance %
-        (1000 * 60 * 60 * 24)) /
-        (1000 * 60 * 60)
-    );
-
-
-    const minutes =
-    Math.floor(
-        (distance %
-        (1000 * 60 * 60)) /
-        (1000 * 60)
-    );
-
-
-    const seconds =
-    Math.floor(
-        (distance %
-        (1000 * 60)) /
-        1000
-    );
-
-
-    document.getElementById("days")
-    .innerText =
-    String(days).padStart(2,"0");
-
-
-    document.getElementById("hours")
-    .innerText =
-    String(hours).padStart(2,"0");
-
-
-    document.getElementById("minutes")
-    .innerText =
-    String(minutes).padStart(2,"0");
-
-
-    document.getElementById("seconds")
-    .innerText =
-    String(seconds).padStart(2,"0");
-
-}
-
-
-setInterval(countdown,1000);
-
-countdown();
-
 </script>
+
 
 </body>
 </html>
