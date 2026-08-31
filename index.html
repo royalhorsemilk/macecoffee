@@ -27,14 +27,25 @@ section{padding:70px 0}.head{text-align:center;margin-bottom:35px}.head h2{font-
 .certNote{margin:20px auto 0;max-width:950px;background:#fff8ee;border:1px solid #ead7c1;padding:15px;border-radius:10px;line-height:1.7}
 .gallery{background:#f7f0e8}.galleryGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.galleryItem{height:250px;border-radius:14px;overflow:hidden}.galleryItem img{width:100%;height:100%;object-fit:cover;transition:.35s}.galleryItem:hover img{transform:scale(1.06)}
 .uploadBox{max-width:950px;margin:auto;border:2px dashed #d9bb96;padding:23px;border-radius:17px;background:#fff}.uploadGrid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.uploadCard{border:1px solid #eadbce;border-radius:12px;padding:18px}.uploadCard h3{color:var(--b)}.uploadCard p{font-size:14px;color:#75685f;margin:5px 0 10px}.file{width:100%;padding:9px}.preview{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}.preview img,.preview video{width:100%;height:180px;object-fit:cover;border-radius:9px;background:#eee}
-.order{background:linear-gradient(135deg,#fff7ee,#f1dfca)}.orderBox{max-width:850px;margin:auto;background:#fff;padding:30px;border-radius:19px;box-shadow:0 15px 40px #3f1e0f1c}.packages{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:20px}.package{border:2px solid #e0d1c5;padding:16px;border-radius:12px;cursor:pointer}.package.selected{border-color:var(--c);background:#fff8f2}.package b{display:block;color:var(--c);font-size:20px}.form{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field label{display:block;font-weight:600;margin-bottom:4px}.field input,.field textarea{width:100%;padding:11px;border:1px solid #d8cec6;border-radius:8px;font-family:inherit}.full{grid-column:1/-1}.summary{display:flex;justify-content:space-between;background:#fff7ee;padding:14px;border-radius:9px;margin-top:16px;font-weight:700}.orderBtn{width:100%;margin-top:14px;background:#218d4b}
+.order{background:linear-gradient(135deg,#fff7ee,#f1dfca)}.orderBox{max-width:850px;margin:auto;background:#fff;padding:30px;border-radius:19px;box-shadow:0 15px 40px #3f1e0f1c}.packages{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:20px}.package{border:2px solid #e0d1c5;padding:16px;border-radius:12px;cursor:pointer}.package.selected{border-color:var(--c);background:#fff8f2}.package b{display:block;color:var(--c);font-size:20px;margin-top:4px}.package input{margin-right:6px}.form{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field label{display:block;font-weight:600;margin-bottom:4px}.field input,.field textarea{width:100%;padding:11px;border:1px solid #d8cec6;border-radius:8px;font-family:inherit}.full{grid-column:1/-1}.summary{display:flex;justify-content:space-between;background:#fff7ee;padding:14px;border-radius:9px;margin-top:16px;font-weight:700}.orderBtn{width:100%;margin-top:14px;background:#218d4b}
 footer{background:#160b07;color:#d8cbc4;text-align:center;padding:28px}footer strong{color:#e0ad59}.float{position:fixed;right:18px;bottom:18px;width:57px;height:57px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;font-size:24px;z-index:98}
 @media(max-width:820px){.links{display:none}.heroGrid,.detailGrid{grid-template-columns:1fr}.grid3,.galleryGrid{grid-template-columns:1fr 1fr}.stepGrid{grid-template-columns:1fr 1fr}.uploadGrid,.packages,.form{grid-template-columns:1fr}.full{grid-column:auto}.hero h1{font-size:45px}}
 @media(max-width:520px){section{padding:55px 0}.grid3,.galleryGrid,.stepGrid,.benefitGrid,.preview{grid-template-columns:1fr}.hero h1{font-size:38px}.hero h2{font-size:23px}.heroImg img{height:390px}}
+
+.menuBtn{display:none;background:var(--b);color:#fff;border:0;border-radius:8px;width:43px;height:43px;font-size:22px;cursor:pointer}
+.navActions{display:flex;align-items:center;gap:8px}
+.reviewGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.review{background:#fff;padding:22px;border-radius:15px;border:1px solid #eadbce;box-shadow:0 7px 23px #0000000a}.stars{letter-spacing:2px;font-size:18px}.review p{line-height:1.7;color:#665850;margin:9px 0}.review b{color:var(--b)}
+.faq{background:#fffaf5}.faqGrid{max-width:900px;margin:auto;display:grid;gap:10px}.faqItem{background:#fff;border:1px solid #eadbce;border-radius:12px;overflow:hidden}.faqItem button{width:100%;text-align:left;padding:17px;border:0;background:#fff;font:600 17px inherit;color:var(--b);cursor:pointer}.faqAnswer{display:none;padding:0 17px 17px;color:#6b5e57;line-height:1.7}.faqItem.open .faqAnswer{display:block}
+.delivery{margin-top:13px;padding:12px;background:#f7f0e8;border-radius:9px;color:#5d514b;font-size:14px}.delivery select{padding:7px;border:1px solid #d8cec6;border-radius:7px;margin-left:6px}
+@media(max-width:820px){.menuBtn{display:block}.navActions>.btn{display:none}.links{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;padding:12px 4%;box-shadow:0 8px 18px #0001;flex-direction:column;gap:0}.links.open{display:flex}.links a{padding:11px 0;border-bottom:1px solid #eee}.reviewGrid{grid-template-columns:1fr}.nav{position:relative}}
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="logo" href="#home">MACA <span>COFFEE</span></a><nav class="links"><a href="#details">বিস্তারিত</a><a href="#use">কীভাবে খাবেন</a><a href="#benefits">কী কী হবে</a><a href="#certificates">সার্টিফিকেট</a><a href="#order">অর্ডার</a></nav><a class="btn" href="#order">অর্ডার করুন</a></div></header>
+<header><div class="wrap nav">
+<a class="logo" href="#home">MACA <span>COFFEE</span></a>
+<nav class="links" id="navLinks"><a href="#details">বিস্তারিত</a><a href="#use">কীভাবে খাবেন</a><a href="#benefits">কী কী হবে</a><a href="#certificates">সার্টিফিকেট</a><a href="#reviews">রিভিউ</a><a href="#faq">FAQ</a><a href="#order">অর্ডার</a></nav>
+<div class="navActions"><a class="btn" href="#order">অর্ডার করুন</a><button class="menuBtn" id="menuBtn" aria-label="মেনু">☰</button></div>
+</div></header>
 
 <section class="hero" id="home"><div class="wrap heroGrid"><div>
 <div class="badge">PREMIUM MACA COFFEE</div><h1>MACA <span>COFFEE</span></h1><h2>প্রিমিয়াম কফির একটি আলাদা অভিজ্ঞতা</h2>
@@ -69,6 +80,13 @@ footer{background:#160b07;color:#d8cbc4;text-align:center;padding:28px}footer st
 <div class="benefit">📌 <b>গুরুত্বপূর্ণ:</b> প্রমাণ ছাড়া কোনো নিশ্চিত চিকিৎসা বা যৌনক্ষমতা বৃদ্ধির দাবি করবেন না।</div>
 </div></div></section>
 
+
+<section id="reviews" class="cream"><div class="wrap"><div class="head"><h2>⭐ কাস্টমার রিভিউ</h2><p>আপনার আসল customer feedback এখানে যোগ করুন</p></div>
+<div class="reviewGrid">
+<div class="review"><div class="stars">★★★★★</div><p>“পণ্যের আসল customer feedback এখানে লিখুন।”</p><b>— Customer 01</b></div>
+<div class="review"><div class="stars">★★★★★</div><p>“আপনার verified review এখানে যোগ করুন।”</p><b>— Customer 02</b></div>
+<div class="review"><div class="stars">★★★★★</div><p>“শুধু বাস্তব customer experience ব্যবহার করুন।”</p><b>— Customer 03</b></div>
+</div></div></section>
 <section class="media"><div class="wrap"><div class="head"><h2>🎥 প্রোডাক্ট ভিডিও</h2><p>এই folder-এ video.mp4 রাখলেই ভিডিও দেখা যাবে</p></div><div class="video"><video controls poster="61.jpg"><source src="video.mp4" type="video/mp4">Video not supported.</video></div></div></section>
 
 <section class="certs" id="certificates"><div class="wrap"><div class="head"><h2>🏆 সার্টিফিকেট বার</h2><p>আপনার আসল certificate-এর ছবি এখানে বসবে</p></div>
@@ -94,6 +112,14 @@ footer{background:#160b07;color:#d8cbc4;text-align:center;padding:28px}footer st
 <div class="uploadCard"><h3>🎥 ভিডিও নির্বাচন</h3><p>MP4/WebM নির্বাচন করুন</p><input class="file" id="videos" type="file" accept="video/*" multiple></div>
 </div><div class="preview" id="preview"></div></div></div></section>
 
+
+<section id="faq" class="faq"><div class="wrap"><div class="head"><h2>❓ সাধারণ প্রশ্ন</h2><p>অর্ডারের আগে প্রয়োজনীয় তথ্য</p></div>
+<div class="faqGrid">
+<div class="faqItem"><button type="button">MACA COFFEE কীভাবে খাবেন?　＋</button><div class="faqAnswer">প্যাকেটের লেবেলে দেওয়া ব্যবহারবিধি ও পরিমাণ অনুসরণ করুন।</div></div>
+<div class="faqItem"><button type="button">কোন প্যাকেজ পাওয়া যাচ্ছে?　＋</button><div class="faqAnswer">বর্তমান পেজে ১ Box এবং ২ Box—এই দুটি package option দেওয়া আছে।</div></div>
+<div class="faqItem"><button type="button">অর্ডার কীভাবে পাঠাব?　＋</button><div class="faqAnswer">নাম, মোবাইল, জেলা, থানা/উপজেলা ও সম্পূর্ণ ঠিকানা দিয়ে “WhatsApp-এ অর্ডার পাঠান” চাপুন।</div></div>
+<div class="faqItem"><button type="button">সার্টিফিকেট কোথায় দেখব?　＋</button><div class="faqAnswer">Certificate section-এ আপনার আসল certificate-এর ছবি যোগ করলে সেখানে দেখা যাবে।</div></div>
+</div></div></section>
 <section class="order" id="order"><div class="wrap"><div class="head"><h2>🛒 অর্ডার করুন</h2><p>প্যাকেজ নির্বাচন করে তথ্য দিন</p></div><div class="orderBox">
 <div class="packages">
 <label class="package selected"><input type="radio" name="pkg" value="1 Box" data-price="1250" checked> MACA COFFEE — 1 Box <b>৳ ১,২৫০</b></label>
@@ -104,12 +130,16 @@ footer{background:#160b07;color:#d8cbc4;text-align:center;padding:28px}footer st
 <div class="field"><label>জেলা *</label><input id="district" placeholder="জেলা"></div><div class="field"><label>থানা/উপজেলা *</label><input id="thana" placeholder="থানা/উপজেলা"></div>
 <div class="field full"><label>সম্পূর্ণ ঠিকানা *</label><textarea id="address" rows="3" placeholder="সম্পূর্ণ ঠিকানা"></textarea></div>
 </div>
+<div class="delivery">🚚 ডেলিভারি চার্জ:
+<select id="delivery">
+<option value="0">চার্জ পরে নিশ্চিত করা হবে</option>
+</select></div>
 <div class="summary"><span id="sp">MACA COFFEE × 1 Box</span><span id="price">৳ 1,250</span></div>
 <button class="btn orderBtn" id="orderBtn">💬 WhatsApp-এ অর্ডার পাঠান</button>
 </div></div></section>
 
 <footer><p><strong>MACA COFFEE</strong> • Premium Product Landing Page</p><p>© 2026 MACA COFFEE. All Rights Reserved.</p></footer>
-<a class="float" href="#order">☕</a>
+<a class="float" href="#order" aria-label="অর্ডার করুন">☕</a>
 
 <script>
 document.querySelectorAll('input[name="pkg"]').forEach(r=>r.onchange=()=>{
@@ -128,11 +158,13 @@ document.getElementById('orderBtn').onclick=()=>{
  district=document.getElementById('district').value.trim(),thana=document.getElementById('thana').value.trim(),
  address=document.getElementById('address').value.trim(),r=document.querySelector('input[name="pkg"]:checked');
  if(!name||!phone||!district||!thana||!address){alert('দয়া করে সব তথ্য পূরণ করুন।');return}
+ if(!/^01\\d{9}$/.test(phone.replace(/[-\\s]/g,''))){alert('সঠিক ১১ সংখ্যার বাংলাদেশি মোবাইল নম্বর দিন।');return}
  let msg=`🛒 নতুন অর্ডার
 
 ☕ Product: MACA COFFEE
 📦 Package: ${r.value}
 💰 Price: ৳ ${Number(r.dataset.price).toLocaleString('en-US')}
+🚚 Delivery: চার্জ পরে নিশ্চিত করা হবে
 
 👤 Name: ${name}
 📱 Phone: ${phone}
@@ -141,8 +173,15 @@ document.getElementById('orderBtn').onclick=()=>{
 🏠 Address: ${address}`;
  window.open('https://wa.me/'+WHATSAPP_NUMBER+'?text='+encodeURIComponent(msg),'_blank');
 };
+
+// Mobile menu
+document.getElementById('menuBtn').onclick=()=>document.getElementById('navLinks').classList.toggle('open');
+document.querySelectorAll('#navLinks a').forEach(a=>a.onclick=()=>document.getElementById('navLinks').classList.remove('open'));
+
+// FAQ accordion
+document.querySelectorAll('.faqItem button').forEach(btn=>btn.onclick=()=>btn.parentElement.classList.toggle('open'));
 </script>
 </body>
 </html>
-index.html
+MACA_COFFEE_Pro_Landing_Page.html
 HTML
